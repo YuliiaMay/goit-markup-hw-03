@@ -149,10 +149,20 @@ body {
 
   /* hero */
 .hero-section {
-    text-align: center;
+    
     background-color: var(--background-color-dark);
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.hero-conteiner {
+    width: 696px;
+    text-align: center;
+}
+
+.hero-section .conteiner {
+    display: flex;
+    justify-content: center;
 }
 
 .hero-title {
@@ -208,7 +218,7 @@ body {
 }
 
 .advantages-item {
-    width: calc((100% - 3* 30px) / 3);
+    width: calc((100% - 3* 30px) / 4);
 }
 
 .advantages-item:not(:last-child) {
@@ -259,7 +269,7 @@ body {
     list-style: none;
     padding-left: 0px;
     margin-top: 0px;
-    margin-bottom: 94px;
+    margin-bottom: 0px;
     display: flex;
 
 }
@@ -319,6 +329,7 @@ body {
 
 .team-name {
     font-weight: 500;
+    font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
@@ -327,6 +338,8 @@ body {
 }
 
 .team-position {
+    font-weight: 400;
+    font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
@@ -343,7 +356,7 @@ body {
 }
 
 .footer-conteiner .logo {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     display: block;
 }
 
@@ -360,12 +373,17 @@ body {
 }
 
 .footer-list .link {
-    color: var(--light-text-color);
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+}
+
+.contact-address,
+.contact-tel,
+.contact-mail {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-mail, 
@@ -376,7 +394,7 @@ body {
 .footer-list .link:hover,
 .footer-list .link:focus,
 .footer-list .link:active {
-    color: var(--brand-color-main);
+    color: var(--light-text-color);
 }
 
 /* PORTFOLIO */
